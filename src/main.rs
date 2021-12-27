@@ -191,7 +191,7 @@ async fn on_room_react(
 
 /// Log into the homesever, sync the client and register event handlers
 ///
-/// This function will never return, as [`matrix_sdk::client::Client`] never returns.
+/// This function will never return, as [`matrix_sdk::Client::sync`] never returns.
 async fn login_and_sync(
     homeserver_url: &str,
     username: &str,
